@@ -20,6 +20,9 @@ return {
           },
         },
       },
-    }
+    },
+    config = function()
+      vim.cmd("Neotree")
+    end
   }
 }
