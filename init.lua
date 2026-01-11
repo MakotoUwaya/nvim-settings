@@ -16,3 +16,10 @@ keymap.set("n", "<C-Up>", ":resize -3<CR>")
 keymap.set("n", "<C-Down>", ":resize +3<CR>")
 keymap.set("n", "<C-Left>", ":vertical resize -3<CR>")
 keymap.set("n", "<C-Right>", ":vertical resize +3<CR>")
+
+keymap.set('n', '<leader>w', ':w<cr>', { desc = 'Save file', remap = true })
+keymap.set('n', '<leader>q', ':q<cr>', { desc = 'Quit Neovim', remap = true })
+keymap.set('n', '<C-a>', 'gg<S-v>G', { desc = 'Select all', noremap = true })
+keymap.set('n', '<C-b>', ':Neotree<cr>', { desc = 'Open Neotree', noremap = true })
+
+keymap.set('i', 'jk', '<ESC>', { desc = 'jk to ESC', noremap = true })
