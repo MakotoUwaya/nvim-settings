@@ -1,0 +1,30 @@
+# シェルプロンプトの間に空行を追加します
+add_newline = true
+
+# Starshipによって実行されたコマンドのタイムアウト時間 (milliseconds) です。(デフォルト500ms)
+command_timeout = 2000
+
+[package]
+disabled = true
+
+[aws]
+disabled = false
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+
+[aws.region_aliases]
+ap-northeast-1 = 'tokyo'
+
+[gcloud]
+disabled = true
+
+[directory]
+truncation_length = 16
+truncation_symbol = "…/"
+
+[git_commit]
+only_detached = false
+
+[nodejs]
+disabled = false
+format = "[$symbol$version ](bold green)"
+

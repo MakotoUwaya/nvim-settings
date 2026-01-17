@@ -1,0 +1,7 @@
+gui:
+  sidePanelWidth: 0.25
+  expandFocusedSidePanel: true
+git:
+  autoFetch: false
+  pagers:
+    - pager: delta --dark --paging=never --side-by-side --line-numbers

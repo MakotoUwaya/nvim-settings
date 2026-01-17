@@ -1,0 +1,13 @@
+[tools]
+node = "24.11.1"
+pnpm = "10"
+npm = "latest"
+
+"npm:gitmoji-cli" = "latest"
+"ubi:goreleaser/goreleaser" = "latest"
+"ubi:junegunn/fzf" = "latest"
+"ubi:sharkdp/bat" = "latest"
+"npm:neovim" = "latest"
+delta = "latest"
+fzf = "latest"
+

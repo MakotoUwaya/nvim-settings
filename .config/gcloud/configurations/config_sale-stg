@@ -1,0 +1,8 @@
+[core]
+account = makoto.uwaya@e-seikatsu.co.jp
+project = sale-stg
+
+[compute]
+region = asia-northeast1
+zone = asia-northeast1-a
+

@@ -1,0 +1,45 @@
+[user]
+        name = Makoto Uwaya 
+        email = makoto.uwaya@e-seikatsu.co.jp
+[alias]
+        co = checkout
+        ci = commit
+        st = status
+        sw = switch
+        br = branch
+        f = fetch --prune
+        cim = commit -m
+        clean-feature = !"git branch --merged | grep feature/ | grep -o -E feature/.+ | xargs git branch -d"
+        tr = checkout --track
+        last = log -1 HEAD
+        lg = log --graph -n 20 --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(green)- %an, %cr%Creset'
+        lgc = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
+[core]
+        ignorecase = false
+        editor = nvim
+	quotepath = false
+    	pager = delta
+[http]
+        postBuffer = 524288000
+        version = HTTP/1.1
+[pull]
+        rebase = false
+[push]
+        default = current
+[credential]
+        helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe
+[init]
+        defaultBranch = main
+[fetch]
+	prune = true
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+    	navigate = true  # use n and N to move between diff sections
+	dark = true      # or light = true, or omit for auto-detection
+	side-by-side = true
+	line-numbers = true
+[merge]
+    	conflictStyle = zdiff3	
+[include]
+	path = ~/.gitconfig_shared
